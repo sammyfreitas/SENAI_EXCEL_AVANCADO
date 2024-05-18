@@ -1,0 +1,168 @@
+https://www.hashtagtreinamentos.com/exercicios-de-excel-2#:~:text=Exerc%C3%ADcios%20de%20Excel%20%E2%80%93%20Como%20se%20preparar%20para,complexa.%20...%204%20Resolu%C3%A7%C3%A3o%20do%20Exerc%C3%ADcio%202%20
+
+
+Exercícios de Excel – Como se preparar para um TESTE de EXCEL
+Este é um post de exercícios do Excel para que os alunos possas praticar a resolução de problemas. Para isso temos 3 exercícios divididos em 3 abas diferentes para que o aluno possa analisar situações mais próximas do que pode encontrar no ambiente de trabalho.
+
+Desta forma vamos propor os exercícios com problemas mais complexos e com isso além dos alunos praticarem para fixar melhor o conteúdo, estarão também se preparando para os testes de Excel que são cada vez mais cobrados em entrevistas de emprego.
+
+Exercícios de Excel – 1
+Para o primeiro exercício temos a seguinte tabela com sua legenda logo ao lado.
+
+Tabela para Exercícios de Excel
+Tabela para Exercícios de Excel
+Neste exercício o aluno terá que inserir os sinais da legenda na coluna de estoque de acordo com as condições da coluna E, ou seja, se o estoque de um produto estiver com uma quantidade igual ou superior a 800 teremos que colocar um sinal verde para indicar que o estoque está bom.
+
+Caso o estoque esteja entre 800 e 550 já temos um estoque médio e por fim se tivermos um estoque menor que 550 já temos uma situação crítica.
+
+Resolução do Exercício 1
+O primeiro passo é entender que será necessário utilizar uma formatação condicional. Isso se deve ao fato de que precisamos formatar as células (com os sinais) baseado em uma condição, que é a condição dos valores da legenda.
+
+Vamos então selecionar a coluna B (basta clicar em cima da letra B), em seguida vamos até a guia Página Inicial, depois vamos selecionar Formatação Condicional, Conjuntos de Ícones e por fim as Formas que temos na legenda, que são 3 círculos (verde, amarelo e vermelho).
+
+Formatação Condicional por Conjunto de Ícones
+Formatação Condicional por Conjunto de Ícones
+Ao fazer essa seleção é possível notar que o Excel já faz uma formatação dos dados da coluna B.
+
+Resultado da Formatação Condicional
+Resultado da Formatação Condicional
+No entanto não sabemos os critérios que foram utilizados para tal formatação. Neste caso vamos até a opção de Formatação Condicional e em seguida em Formatar Regras.
+
+Gerenciador de regras - Exercícios de Excel
+Gerenciador de regras – Exercícios de Excel
+Como temos apenas uma regra atribuída ela que irá aparecer dentro do gerenciador de regras. Aqui basta selecionar essa regra e clicar na opção Editar Regra.
+
+Janela de edição da regra criada
+Janela de edição da regra criada
+Aqui o usuário poderá editar a regra que foi colocada para as células selecionadas. Então poderá alterar os estilos dos ícones, o ícone para cada faixa, os intervalos e o tipo.
+
+Neste caso como estamos analisando valores vamos modificar a opção de Tipo para Número e vamos inserir os valores que temos na legenda para que possamos ter o mesmo resultado em todos os valores.
+
+Feitas as modificações basta pressionar OK e na janela do gerenciador de regras basta selecionar a opção Aplicar e fechar a janela.
+
+Resultado da formatação após a edição da regra - Exercícios de Excel
+Resultado da formatação após a edição da regra – Exercícios de Excel
+É possível observar que todos os dados da coluna B foram formatados conforme as informações da legenda ao lado da tabela.
+
+Com esse exercício foi possível aprender como fazer uma formatação condicional de forma rápida para mostrar ao usuário de uma forma visual o status do seu estoque, ou seja, olhando apenas para os símbolos o usuário saberá se aquele é um produto com estoque crítico ou não.
+
+Desta forma não será necessário verificar na legenda produto por produto para saber se o estoque está ou não em um nível crítico. Apenas olhando é possível ter uma noção prévia do status de cada um dos produtos.
+
+Exercícios de Excel – 2
+Para o segundo exercício temos uma atividade um pouco mais complexa. Neste caso precisamos construir um Quadro Gerencial para analisar o valor total faturado de cada grife por fábrica.
+
+Tabela para o exercício 2
+Tabela para o exercício 2
+Esta é a tabela que será utilizada. Temos a descrição de cada produto, a grife correspondente, a fábrica em que esse produto foi feito e por fim a quantidade faturada deste produto.
+
+Quadro gerencial que será preenchido - Exercícios de Excel
+Quadro gerencial que será preenchido – Exercícios de Excel
+Este é o quadro gerencial que deverá ser preenchido com o valor total de cada grife por fábrica.
+
+Resolução do Exercício 2
+Neste exercício temos que obter o valor total de cada grife por fábrica, para isso será necessário fazer uma soma com duas condições, ou seja, precisamos no primeiro caso somar somente os produtos da grife Lira Batom que foram feitos na Fábrica RJ.
+
+A fórmula que vai nos auxiliar neste problema é a SOMASES, pois com ela será possível fazer uma soma com mais de uma condição, ou seja, vamos conseguir abranger a grife e a fábrica.
+
+Fórmula SOMASES
+Fórmula SOMASES
+Essa é uma fórmula bem simples, precisamos apenas de 3 argumentos iniciais e mais 2 a cada nova condição. Como temos 2 condições vamos utilizar 5 argumentos.
+
+O primeiro é o intervalo da soma que será a coluna D (Faturado), o segundo é o intervalo do primeiro critério que neste caso será a coluna C (Fábrica) e o terceiro argumento é o critério que para o primeiro caso é Fábrica RJ (célula F4).
+
+Para a segunda condição temos mais 2 argumentos (neste caso não temos mais o intervalo de soma, pois ele é o mesmo). O quarto argumento é o intervalo do segundo critério, que é a coluna B (Grife) e por fim o último argumento que é o critério Lira Batom (célula G3).
+
+Fórmula SOMASES preenchida
+Fórmula SOMASES preenchida
+Essa será a fórmula utilizada para a célula G4. Aqui temos alguns trancamentos para que seja possível arrastar a fórmula sem que o Excel movimente nossas referências de modo a obter dados errados.
+
+O trancamento dos intervalos é necessário para que o Excel não mude esses intervalos, pois eles são os mesmos para todos os cálculos. Já nos critérios fizemos um trancamento parcial, nas fábricas fizemos um trancamento da coluna, desta forma ao arrastar a fórmula para a direita o Excel não vai permitir que a referência saia da coluna F.
+
+Já para as grifes o trancamento parcial foi feito na linha, pois ao arrastar a fórmula para baixo a linha se manterá como 3, desta forma não irá alterar a grife.
+
+Com esses dois trancamentos parciais é possível arrastar a fórmula para toda a tabela sem que as referências fiquem incorretas, ou seja, vão pegar somente as fábricas e as grifes sem obter nenhum outro dado incorreto.
+
+Quadro gerencial preenchido - Exercícios de Excel
+Quadro gerencial preenchido – Exercícios de Excel
+Esse é o resultado após arrastar a fórmula para as outras células da tabela. É possível observar que fizemos a soma total de cada fábrica por grife sem precisar verificar uma a uma dentro da tabela.
+
+OBS: Temos uma célula vazia não por erro da fórmula, mas porque não temos nenhum produto vendido que foi feito pela Fábrica RJ com a grife Sabom Paes Leme.
+
+Essa é uma fórmula muito útil principalmente nesses casos quando é necessário criar um quadro resumo com as informações da própria tabela. Isso permite ao usuário fazer uma análise mais rápida e fácil sem a necessidade de procurar ou filtrar os dados na tabela sempre que precisar de uma informação nova.
+
+Exercícios de Excel – 3
+Esse é um exercício muito comum quando fazemos a importação de dados, pois geralmente eles não são importados separados cada um em sua respectiva coluna.
+
+Tabela para o exercício 3
+Tabela para o exercício 3
+Neste caso temos a importação de dados que foi feita em uma única coluna, mas temos que separar essas informações para que possamos analisar corretamente esses dados e até trabalhar com eles posteriormente como fizemos no exercício anterior.
+
+Então esse exercício é justamente para que o aluno saiba como tratar essas informações e separá-las de forma eficiente para que esses dados possam ser analisados.
+
+Resolução do Exercício 3
+O primeiro passo para resolver esse tipo de problema é verificar o padrão que temos dentro desses dados. É possível observar que as informações que queremos são sempre separadas pelo underline (_), ou seja, podemos utilizar esse símbolo como delimitador das informações.
+
+Sabendo disse vamos utilizar algumas fórmulas de texto para obter informações e então separar esses dados corretamente. A primeira fórmula que vamos utilizar é a fórmula PROCURAR, pois com ela poderemos fazer a busca deste símbolo dentro do nosso texto e identificar em que posição ele se encontra.
+
+Com essa informação saberemos quantos caracteres temos em cada informação e assim conseguiremos separar esses dados.
+
+Fórmula PROCURAR para encontrar o primeiro símbolo - Exercícios de Excel
+Fórmula PROCURAR para encontrar o primeiro símbolo – Exercícios de Excel
+Para o primeiro símbolo vamos utilizar a fórmula desta maneira, pois o Excel retorna à primeira ocorrência deste símbolo.
+
+Resultado da fórmula PROCURAR
+Resultado da fórmula PROCURAR
+O resultado para o primeiro texto é 9, isso quer dizer que o símbolo está na 9ª posição dentro do texto. Agora se quisermos encontrar o segundo símbolo teremos que utilizar o terceiro argumento (opcional) da fórmula PROCURAR, pois ele nos permite colocar um valor inicial para começar a procurar.
+
+Como essa fórmula retorna à primeira ocorrência desse símbolo se colocarmos somente os dois primeiros argumentos novamente a resposta será a mesma. Agora que sabemos a posição do primeiro símbolo basta começar no caractere seguinte a ele para que o Excel não conte o símbolo que já encontramos.
+
+Fórmula para obter a posição do segundo símbolo
+Fórmula para obter a posição do segundo símbolo
+Para o segundo símbolo vamos utilizar a mesma fórmula só acrescentando o terceiro argumento que será o número da posição do primeiro símbolo + 1, desta forma o Excel irá buscar pelo segundo símbolo.
+
+Resultado das posições dos símbolos
+Resultado das posições dos símbolos
+Agora temos as posições dos dois símbolos e com isso podemos utilizar outras fórmulas de texto para podermos extrair as informações para separar nas 3 colunas.
+
+Fórmula ESQUERDA para obter a informação de código
+Fórmula ESQUERDA para obter a informação de código
+A fórmula ESQUERDA serve para obter dados que começa da esquerda de uma célula. O primeiro argumento é a célula que contém o texto e o segundo argumento é o tamanho do texto que queremos obter, neste caso é a posição do primeiro símbolo – 1, para não obtermos o símbolo dentro do texto. Assim podemos obter a informação de Código.
+
+Fórmula DIREITA para obter a informação de fábrica
+Fórmula DIREITA para obter a informação de fábrica
+Para a informação de Fábrica vamos utilizar a fórmula acima. Neste caso estamos utilizando uma fórmula extra que é NÚM.CARACT que serve para contar o número de caracteres de uma célula. Isso foi feito para saber o tamanho total e poder obter a quantia exata pela direita para que o nome da fábrica fique correto, ou seja, vamos pegar o tamanho total e subtrair da posição do segundo símbolo para obter o tamanho da última informação desejada.
+
+Como aqui temos apenas 2 fábricas e as duas possuem 10 caracteres, podemos ao invés de utilizar essa fórmula extra colocar apenas o número 10 após o ponto e vírgula que irá funcionar da mesma maneira.
+
+Fórmula EXT.TEXTO para obter a informação de marca
+Fórmula EXT.TEXTO para obter a informação de marca
+Por fim para obter a informação de Marca vamos utilizar a fórmula EXT.TEXTO que funciona para extrair a informação de um texto. Como o que queremos obter está no meio teremos que utilizar essa fórmula.
+
+O primeiro argumento é onde se encontra o texto, o segundo argumento é onde se inicial o texto que será extraído e por fim o último argumento é o tamanho do texto. Neste caso vamos subtrair as posições dos dois símbolos e subtrair 1 para que não seja obtido o símbolo no processo da extração.
+
+Primeira linha de dados preenchida
+Primeira linha de dados preenchida
+Ao finalizar as 3 fórmulas teremos esse resultado. É possível observar que todas as informações foram separadas corretamente e de forma automática, ou seja, mesmo que não tenha um padrão de tamanho será possível efetuar essa separação de forma eficiente.
+
+Tabela completa com a separação de todos os dados - Exercícios de Excel
+Tabela completa com a separação de todos os dados – Exercícios de Excel
+Agora basta arrastar as fórmulas tanto da tabela quanto das posições dos símbolos para que o Excel possa obter as informações de todos os dados.
+
+Caso o usuário não queira que as colunas G e H fiquem a mostra podemos executar duas ações. Uma delas seria colocar essas fórmulas já dentro das fórmulas de texto que utilizamos ou o usuário poderá selecionar essas duas colunas, clicar com o botão direito do mouse e selecionar a opção Ocultar.
+
+Ao ocultar uma coluna os dados não ficarão visíveis, mas o Excel ainda consegue utilizar esses dados para utilizar nas fórmulas normalmente.
+
+Essas ferramentas desse exercício são muito úteis porque muitas das vezes que importamos alguns dados eles são apresentados dessa forma, e para que o usuário não tenha que fazer essa separação, principalmente pela quantia de dados, basta utilizar essas fórmulas e automatizar o processo.
+
+Os exercícios feitos nesse post são para que os alunos possam treinar para testes de Excel que possam vir a fazer e conhecer novas ferramentas para resolver problemas do dia a dia.
+
+Caso tenha interesse, fizemos uma parceria com o Vagas.com para explicar um pouco mais sobre os temas de Excel mais cobrados em processos seletivos.
+
+Conclusão – Exercícios de Excel
+Nessa publicação eu te mostrei alguns exercícios sobre função SE, função PROCV, Formatar como Tabela e Tabela Dinâmica.
+
+Esses são recursos e funções muito utilizados no dia a dia de quem usa Excel e eles vão te ajudar muito não só a te deixar mais produtivo como a facilitar e melhorar o seu trabalho com essa ferramenta.
+
+Além disso, é importante que você pratique sempre, pois assim consegue fixar muito melhor o que aprendeu. Se quiser ler tudo de uma vez e depois partir pra prática não tem problema. O importante é que continue praticando!
+
+Deixei mais 3 exercícios para que você possa praticar outras ferramentas e funções importantes do Excel!
